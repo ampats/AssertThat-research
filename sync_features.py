@@ -2,15 +2,17 @@ import requests
 import os
 import zipfile
 from github import Github
+from dotenv import load_dotenv
 
+load_dotenv()
 # AssertThat credentials
-at_access_key = '5ab8ba97cb69a63ebf14d6dd52f7b3f5bd68abe73ab362ad1182078d49f34bc5'
-at_secret_key = '5ddd058df5b5f265798693de06ff4c36ca9a4857cf5f9dc219f35bd7be0ba14f'
-at_project_id = '10000'
+at_access_key = os.getenv("AT_ACCESS_KEY")
+at_secret_key = os.getenv("AT_SECRET_KEY")
+at_project_id = os.getenv("AT_PROJECT_ID")
 at_path = 'https://bdd.assertthat.app/rest/api/1/project/' + at_project_id + '/features'
 
 # GitHub credentials
-github_token = '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'
+github_token = os.getenv("GITHUB_TOKEN")
 github_repo = 'ampats/AssertThat-research'
 
 # Directory to store feature files
