@@ -1,8 +1,7 @@
 # AssertThat-research
 
 ### 1. Clone down the repository:
-`git clone git@github.com:pfizer-digital-manufacuring/dm-quality-devsecops-testingframework.git`
-
+`git clone git@github.com:ampats/AssertThat-research.git`
 
 ### 2. Create you venv environment and folder called venv:
 `python -m venv venv`
