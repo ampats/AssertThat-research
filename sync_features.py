@@ -16,7 +16,7 @@ github_token = os.getenv("GITHUB_TOKEN")
 github_repo = 'ampats/AssertThat-research'
 
 # Directory to store feature files
-feature_directory = 'feature_files'
+feature_directory = 'features'
 
 # Create a GitHub repository object
 g = Github(github_token)

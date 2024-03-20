@@ -19,5 +19,7 @@ You should see `(venv)` if your working in the virtual environment
 ### Optional - If updates are made to packages in venv, run the following command in the **root directory** to update requirements.txt 
 `pip freeze > requirements.txt`
 
-### 5. Run the following command in your terminal:
+### 5. Create a .env file with your AssertThat and GitHub credentials
+
+### 6. Run the following command in your terminal:
 `python sync_features.py`
